@@ -24,7 +24,7 @@ function App() {
         for (let i = 0; i < length; i++) { // Loop to generate password of given length
             let char = Math.floor(Math.random() * str.length); // Random index in the string
             password += str.charAt(char); // Append random character to password
-        }
+        } 
 
         SetPassword(password); // Set the generated password
     }, [length, numbersallowed, charallowed]);
